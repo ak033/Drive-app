@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Portfolio</title>
+  <!-- Add Bootstrap stylesheet link here -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <!-- Left side with your name -->
+      <a class="navbar-brand" href="#">Drive</a>
+
+      <!-- Right side with horizontal menu -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Workout</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">your split</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">records</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Community</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="center-text">Drive</div>
+  <div id = "login-button"> login</div>
+  <div class = "option-container">
+
+    <div class = "option" onclick="showPlan('my-split')"> 
+
+      <div class="option-text" >
+        my split
+
+        <div id="my-split" class="workout-plan">
+
+          <div id="overlay" onclick="hidePlan()"></div>
+          <div id="popup">
+
+            
+            <p> <span id="day"></span> </p>
+            <p>
+              <h1 id="workout-heading">Enter workout:</h1>
+              <!-- Add a new box for workout details -->
+          
+
+              <div id="workout-details">
+                <!-- Wrap the input fields and the button in a new div -->
+                <div id="input-fields">
+                  <!-- Top text box -->
+                  <input type="text" id="Workout-name" placeholder="Workout-name">
+                  <!-- Bottom left text box -->
+                  <input type="text" id="Sets" placeholder="Sets">
+                  <!-- Bottom right text box -->
+                  <input type="text" id="Reps" placeholder="Reps">
+                  <!-- Save button -->
+                  <button id = "saveButton" onclick="saveWorkout()">Save</button>
+                </div>
+              </div>
+              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </p>
+          </div>
+        </div>
+        
+      </div>
+      
+    </div>
+    <div class = "option" onclick="showPlan('friends-split')"> 
+
+      <div class="option-text">
+
+        Friends split
+        <div id="friends-split" class="workout-plan">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-U6ISpVV2WeJtiHTa1hpG5I+uM/AkMMSsePQHO26Q2Y5zqHJbX6E5l2n01fsgz5K" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+    <script src="/app.js"></script>
+
+</body>
+
+</html>
